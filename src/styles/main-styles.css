@@ -1,0 +1,107 @@
+:root {
+  --bg-color1: #dedef0;
+  --bg-color2: #f0f0f3;
+  --bg-color3: #990000;
+}
+
+* {
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color1);
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 1fr / 1fr 4fr;
+}
+
+.sidebar {
+  background-color: var(--bg-color2);
+  box-shadow: 0px 0px 5px #a1a1a8; 
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.top {
+  border-bottom: 1px solid #03009938;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.component {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  padding: 10px 20px;
+}
+
+.one {
+  border-bottom: 1px solid #4b4b4b52;
+}
+
+.one button {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.one button:hover {
+  background-color: #a1a1a850;
+}
+
+.two {
+  padding-top: 20px;
+}
+
+.two p {
+  font-size: 15px;
+  text-decoration: underline;
+  color: #4b4b4b;
+}
+
+#top-title {
+  font-size: 20px;
+  font-weight: 650;
+}
+
+div.dial-container {
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+dialog form {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.form-part {
+  padding: 5px 20px;
+  border-bottom: 1px solid #4b4b4b;
+  display: flex;
+  flex-flow: column;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+textarea {
+  resize: none;
+}
+

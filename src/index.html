@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todos</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="site-logo">
+      <h1>My Todos</h1>
+    </div>
+    <div class="component one">
+      <button>Home</button>
+      <button>Tasks</button>
+      <button>Projects</button>
+    </div>
+    <div class="component two">
+      <div>
+        <p>Latests Task </p>
+      </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="top">
+      <div id="top-title">All your tasks and project plan in one place !</div>
+      <div>
+        <button id="top-add-task">Add a Task</button>
+        <button id="top-add-project">New Project</button>
+      </div>
+    </div>
+    <div class="main">
+    </div>
+  </div>
+
+  <!-- MODALS -->
+  <dialog id="create-task">
+    <div class="dial-container">
+      <form>
+
+        <div class="form-part">
+          <label for="task_name">Task Name</label>
+          <input type="text" id="task_name" name="task_name" maxlength="55" />
+        </div>
+
+        <div class="form-part">
+          <label for="task_topic">Topic</label>
+          <input type="text" id="task_topic" name="task_topic" maxlength="20" />
+        </div>
+
+        <div class="form-part">
+          <label for="task_describe">Descrition</label>
+          <textarea id="task_describe" rows="5" cols="35"></textarea>
+        </div>
+
+        <div class="form-part">
+          <label for="task_date">Task Date Limit</label>
+          <input type="datetime-local" id="task_date" name="task_date" required/>
+        </div>
+
+        <div class="form-part">
+          <label for="task_prior">Importance level</label>
+          <select id="task_prior">
+            <option value="S">S : Critical</option>
+            <option value="A">A : Very important</option>
+            <option value="B">B : Important</option>
+            <option value="C">C : Normal</option>
+            <option value="D">D : Low</option>
+          </select>
+        </div>
+        <div class="form-part">
+          <label for="task_project">Save In Project :</label>
+          <select id="task_project">
+          </select>
+        </div>
+
+        <button class="create-task-button" type="submit">CREATE TASK</button>
+      </form>
+
+      <button class="close-dial">X Close</button>
+
+    </div>
+  </dialog>
+
+  <dialog id="create-project">
+
+    <div class="dial-container">
+
+      <form>
+        <div class="form-part">
+          <label for="project_name">Project name</label>
+          <input type="text" id="project_name" name="project_name" maxlength="25" />
+        </div>
+        <div class="form-part">
+          <label for="project_desc">Project Description</label>
+          <textarea id="project_desc" rows="5" cols="35"></textarea>
+        </div>
+        <div class="form-part">
+          <label for="project_topic">Topic</label>
+          <input type="text" id="project_topic" name="project_topic" maxlength="20" />
+        </div>
+
+
+        <button class="create-project-button" type="submit">CREATE PROJECT</button>
+
+      </form>
+
+      <button class="close-dial">X Close</button>
+
+    </div>
+
+  </dialog>
+</body>
+
+</html>
